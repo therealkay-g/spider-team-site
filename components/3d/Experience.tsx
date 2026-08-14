@@ -6,8 +6,8 @@ import { Canvas } from '@react-three/fiber';
 import { Preload, BakeShadows } from '@react-three/drei';
 import { EffectComposer, Bloom, ChromaticAberration } from '@react-three/postprocessing';
 import { useMotionDirector } from '@/motion/MotionDirector';
-import { CinematicCamera } from '@/components/3d/Camera/CinematicCamera';
-import { MorphObject } from '@/components/3d/Objects/MorphObject';
+import { CinematicCamera } from '@/components/3d/camera/CinematicCamera';
+import { MorphObject } from '@/components/3d/objects/MorphObject';
 import { ParticleField } from '@/components/3d/particles/ParticleField';
 import { Lighting } from '@/components/3d/Lighting';
 
