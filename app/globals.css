@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spider-black: #050505;
+  --color-spider-dark: #0a0a0a;
+  --color-spider-accent: #00f2ff;
+  --color-spider-accent-muted: #00a2ad;
+  --color-spider-glass: rgba(255, 255, 255, 0.03);
+  --color-spider-glass-border: rgba(255, 255, 255, 0.1);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--color-spider-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-spider-glass-border);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 242, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 242, 255, 0.1);
+}

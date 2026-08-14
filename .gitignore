@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Production
+build/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code memory/plans
+.claude/
